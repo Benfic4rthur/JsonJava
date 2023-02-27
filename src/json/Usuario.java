@@ -54,4 +54,8 @@ public class Usuario implements Serializable{
 		return Objects.equals(cpf, other.cpf) && Objects.equals(login, other.login)
 				&& Objects.equals(senha, other.senha);
 	}
+	@Override
+	public String toString() {
+		return "Usuario [login=" + login + ", senha=" + senha + ", cpf=" + cpf + ", nome=" + nome + "]";
+	}
 }
